@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Stage A: Start Button -->
+    <div id="start-screen" class="formal-methods">
+        <div class="title"><h1>Uncharted</h1></div>
+        <div class="haiku">
+            <p>between this small world</p>
+            <p>existing fates and crossed walks</p>
+            <p>sleep in the moment</p>
+        </div>
+        <div id ="start-button" class ="start"><p>start</p></div>
+
+    </div>
+
+    <!-- Stage B: Tic Tac Toe Board (Initially Hidden) -->
+    <div id="game-screen" style="display: none;">
+        <div id="game-title"><p id="theme-toggle">&gt; uncharted</p></div>
+        <div id="game-status">Player X's turn</div>
+        <div id="game-container">
+            <!-- Tic Tac Toe squares -->
+            <div class="square" id="0"></div>
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+        </div>
+        <div  class="try"><div id="try-again-button"><p>try again :]</p></div></div>
+
+        <div class="about"><a href="about.html">[under the hood]</a></div>
+
+    </div>
+
+    <script src="minimax.js"></script>
+</body>
+</html>
