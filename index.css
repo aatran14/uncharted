@@ -18,13 +18,12 @@ body {
     margin: 0;
     background-color: var(--set-1);
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     -webkit-text-size-adjust: 100%;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     letter-spacing: .5px;
     font-weight: 100;
     transition: background-color 0.3s;
-
     color-scheme: light dark;
 
   }
@@ -34,6 +33,32 @@ body {
     color: var(--);
   }
 
+  .chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  
+  }
+  #trace-path {
+    stroke-dasharray: 300; 
+    stroke-dashoffset: 300;
+    animation: draw 4s ease-in-out forwards; 
+  }
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0; 
+    }
+  }
+
+  #alice{
+    stroke-dasharray: 90;  
+    stroke-dashoffset: 90;
+    animation: draw 4s ease-in-out forwards infinite alternate;
+    animation-delay: 5s;
+  }
 
   .title{
     text-align:center;
@@ -44,7 +69,7 @@ body {
     letter-spacing: 3px;
 
     font-weight: 300;
-    font-size:38px;
+    font-size:36px;
   }
   
   
@@ -119,9 +144,9 @@ body {
     line-height:2;
     color: #f0f0f0;
     font-size: 14px;
-
-
     user-select: none; /* Prevents text selection */
+    margin: 20px 0 30px 0; 
+
 }
 
   p{
@@ -134,7 +159,6 @@ body {
     justify-content: center;
     color:#f0f0f0;
     font-size: 16px;
-    margin: 30px 0 30px 0; 
     cursor: pointer;
   }
 
