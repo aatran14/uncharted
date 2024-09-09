@@ -38,8 +38,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-  
+    user-select: none; /* Prevents text selection */
+   
   }
   #trace-path {
     stroke-dasharray: 300; 
