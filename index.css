@@ -53,12 +53,12 @@ body {
     }
   }
 
-  #alice{
+  /* #alice{
     stroke-dasharray: 90;  
     stroke-dashoffset: 90;
     animation: draw 4s ease-in-out forwards infinite alternate;
     animation-delay: 5s;
-  }
+  } */
 
   .title{
     text-align:center;
