@@ -200,4 +200,13 @@ document.getElementById('try-again-button').addEventListener('click', () => {
 document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
     document.getElementById('game-container').classList.toggle('dark-theme')
+    document.getElementById('trace-path').classList.toggle('dark-theme')
+
+});
+
+document.getElementById('chart').addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    document.getElementById('game-container').classList.toggle('dark-theme')
+    document.getElementById('trace-path').classList.toggle('dark-theme')
+
 });

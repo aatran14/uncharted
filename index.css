@@ -45,7 +45,20 @@ body {
     stroke-dasharray: 300; 
     stroke-dashoffset: 300;
     animation: draw 4s ease-in-out forwards; 
+    stroke : var(--bar-2);
+    transition: stroke 1.5s;
+    
+
   }
+
+  
+
+
+  #trace-path.dark-theme{
+    stroke : var(--set-1);
+    
+  }
+
 
   @keyframes draw {
     to {
@@ -70,6 +83,7 @@ body {
 
     font-weight: 300;
     font-size:36px;
+    margin:.3em;
   }
   
   
