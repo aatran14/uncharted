@@ -1,0 +1,15 @@
+{
+  "name": "uncharted-rs",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "uncharted_rs_bg.wasm",
+    "uncharted_rs.js",
+    "uncharted_rs.d.ts"
+  ],
+  "main": "uncharted_rs.js",
+  "types": "uncharted_rs.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
